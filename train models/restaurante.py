@@ -17,4 +17,8 @@ class Funcionario:
         if isinstance(valor,str) and 'R$' in valor:
             valor = valor.split('R$','')
         self.salario = float(valor)
-        
+
+
+if __name__ == '__main__':
+    funcionario = Funcionario('Jorge',27,'R$2500')
+    print(funcionario.salario)  
