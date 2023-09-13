@@ -48,11 +48,13 @@ class Garcon(Funcionario):
 if __name__ == '__main__':
     jorge = Cozinheiro('jorge',27,'R$2500')
     print(jorge.salario)
+    print(jorge.nome)
     jorge.cozinhar('arroz')
     print()
 
     pedro = Garcon('pedro',19,'1550')
     print(pedro.salario)
+    print(pedro.nome)
     pedro.servir()
     pedro.recebe_gorgeta(10)
     print()
